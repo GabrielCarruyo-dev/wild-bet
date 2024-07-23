@@ -4,11 +4,15 @@ import React from 'react';
 import HeaderLong from './components/header';
 import Animals from './components/animals-ratio';
 function app() {
+  const animals = ["lion", "dog", "dolphin", "hippopotamu", "kangaroo", "cat", "owl", "rabbit", "seahorse", "shark", "swan", "toucan", "whale",];
+  const listItems = animals.map((animal, i) =>
+    <Animals name={animal} num={i+1}/>
+  );
+
   return (
       <div>
         <HeaderLong />
-        <BeakerIcon className="size-6 text-blue-500" />
-        <Animals />
+        {listItems}
       </div>
   );
 }

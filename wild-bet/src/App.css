@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.animalRepresent{
+  width: 90px;
+  height: 90px;
+}
+
+.d-animals{
+  display: inline-flex;
+  margin: 15px;
+}
